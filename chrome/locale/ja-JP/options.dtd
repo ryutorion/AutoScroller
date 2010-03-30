@@ -1,0 +1,19 @@
+<!ENTITY autoscroller.options.main.label "メイン">
+<!ENTITY autoscroller.options.keys.label "ショートカットキー">
+<!ENTITY autoscroller.options.mode.label "モード選択">
+<!ENTITY autoscroller.options.mode.line.label "行単位スクロールモード">
+<!ENTITY autoscroller.options.mode.smooth.label "スムーススクロールモード">
+<!ENTITY autoscroller.options.line.label "行単位スクロールモード">
+<!ENTITY autoscroller.options.line.interval.label "更新間隔 (ms)">
+<!ENTITY autoscroller.options.line.delta.label "スピード変化量 (ms)">
+<!ENTITY autoscroller.options.line.number.label "スクロール行数">
+<!ENTITY autoscroller.options.smooth.label "スムーススクロールモード">
+<!ENTITY autoscroller.options.smooth.interval.label "更新間隔 (ms)">
+<!ENTITY autoscroller.options.smooth.delta.label "スピード変化量 (ms)">
+<!ENTITY autoscroller.options.smooth.number.label "スクロール単位 (px)">
+
+<!ENTITY autoscroller.options.keys.change.label "モード切り替え">
+<!ENTITY autoscroller.options.keys.execute.label "スクロール開始/停止">
+<!ENTITY autoscroller.options.keys.back.label "逆スクロール開始">
+<!ENTITY autoscroller.options.keys.accelerate.label "スピードアップ">
+<!ENTITY autoscroller.options.keys.brake.label "スピードダウン">

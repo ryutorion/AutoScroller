@@ -1,0 +1,5 @@
+<!ENTITY autoscroller.menu.start.label "スクロール開始">
+<!ENTITY autoscroller.menu.stop.label "スクロール停止">
+<!ENTITY autoscroller.menu.reverse.label "逆スクロール開始">
+<!ENTITY autoscroller.menu.accelerate.label "スクロールスピードアップ">
+<!ENTITY autoscroller.menu.brake.label "スクロールスピードダウン">

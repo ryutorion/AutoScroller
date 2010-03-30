@@ -1,0 +1,5 @@
+<!ENTITY autoscroller.menu.start.label "Start Scrolling">
+<!ENTITY autoscroller.menu.stop.label "Stop Scrolling">
+<!ENTITY autoscroller.menu.reverse.label "Start Backward Scrolling">
+<!ENTITY autoscroller.menu.accelerate.label "Scroll Speed Up">
+<!ENTITY autoscroller.menu.brake.label "Scroll Speed Down">

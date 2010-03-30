@@ -1,0 +1,166 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<?xml-stylesheet href = "chrome://global/skin/" type = "text/css" ?>
+<!DOCTYPE prefwindow SYSTEM "chrome://autoscroller/locale/options.dtd">
+<prefwindow
+  xmlns = "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+>
+  <prefpane
+    id = "autoscroller.options.main"
+    label = "&autoscroller.options.main.label;"
+  >
+    <preferences>
+      <preference
+        id   = "autoscroller.options.mode"
+        name = "extensions.autoscroller.mode"
+        type = "int"
+      />
+      <preference
+        id   = "autoscroller.options.line.interval"
+        name = "extensions.autoscroller.line.interval"
+        type = "int"
+      />
+      <preference
+        id   = "autoscroller.options.line.delta"
+        name = "extensions.autoscroller.line.delta"
+        type = "int"
+      />
+      <preference
+        id   = "autoscroller.options.line.number"
+        name = "extensions.autoscroller.line.number"
+        type = "int"
+      />
+      <preference
+        id   = "autoscroller.options.smooth.interval"
+        name = "extensions.autoscroller.smooth.interval"
+        type = "int"
+      />
+      <preference
+        id   = "autoscroller.options.smooth.delta"
+        name = "extensions.autoscroller.smooth.delta"
+        type = "int"
+      />
+      <preference
+        id   = "autoscroller.options.smooth.number"
+        name = "extensions.autoscroller.smooth.number"
+        type = "int"
+      />
+    </preferences>
+    <hbox>
+      <spacer flex = "1" />
+      <label value = "&autoscroller.options.mode.label;" />
+      <radiogroup preference = "extensions.autoscroller.mode" orient = "horizontal">
+        <radio label = "&autoscroller.options.mode.line.label;" />
+        <radio label = "&autoscroller.options.mode.smooth.label;" />
+      </radiogroup>
+      <spacer flex = "1" />
+    </hbox>
+    <hbox>
+      <groupbox>
+        <caption label = "&autoscroller.options.line.label;" />
+        <grid>
+          <columns>
+            <column flex = "1" />
+            <column flex = "2" />
+          </columns>
+          <rows>
+            <row>
+              <label value = "&autoscroller.options.line.interval.label;" />
+              <textbox preference = "extensions.autoscroller.line.interval" />
+            </row>
+            <row>
+              <label value = "&autoscroller.options.line.delta.label;" />
+              <textbox preference = "extensions.autoscroller.line.delta" />
+            </row>
+            <row>
+              <label value = "&autoscroller.options.line.number.label;" />
+              <textbox preference = "extensions.autoscroller.line.number" />
+            </row>
+          </rows>
+        </grid>
+      </groupbox>
+      <groupbox>
+        <caption label = "&autoscroller.options.smooth.label;" />
+        <grid>
+          <columns>
+            <column flex = "1" />
+            <column flex = "2" />
+          </columns>
+          <rows>
+            <row>
+              <label value = "&autoscroller.options.smooth.interval.label;" />
+              <textbox preference = "extensions.autoscroller.smooth.interval" />
+            </row>
+            <row>
+              <label value = "&autoscroller.options.smooth.delta.label;" />
+              <textbox preference = "extensions.autoscroller.smooth.delta" />
+            </row>
+            <row>
+              <label value = "&autoscroller.options.smooth.number.label;" />
+              <textbox preference = "extensions.autoscroller.smooth.number" />
+            </row>
+          </rows>
+        </grid>
+      </groupbox>
+    </hbox>
+  </prefpane>
+  <prefpane
+    id = "autoscroller.options.keys"
+    label = "&autoscroller.options.keys.label;"
+  >
+    <preferences>
+      <preference
+        id   = "autoscroller.options.keys.execute"
+        name = "extensions.autoscroller.keys.execute"
+        type = "string"
+      />
+      <preference
+        id   = "autoscroller.options.keys.back"
+        name = "extensions.autoscroller.keys.back"
+        type = "string"
+      />
+      <preference
+        id   = "autoscroller.options.keys.accelerate"
+        name = "extensions.autoscroller.keys.accelerate"
+        type = "string"
+      />
+      <preference
+        id   = "autoscroller.options.keys.brake"
+        name = "extensions.autoscroller.keys.brake"
+        type = "string"
+      />
+      <preference
+        id   = "autoscroller.options.keys.change"
+        name = "extensions.autoscroller.keys.change"
+        type = "string"
+      />
+    </preferences>
+    <grid>
+      <columns>
+        <column flex = "1" />
+        <column flex = "2" />
+      </columns>
+      <rows>
+        <row>
+          <label value = "&autoscroller.options.keys.change.label;" />
+          <textbox preference = "extensions.autoscroller.keys.change" />
+        </row>
+        <row>
+          <label value = "&autoscroller.options.keys.execute.label;" />
+          <textbox preference = "extensions.autoscroller.keys.execute" />
+        </row>
+        <row>
+          <label value = "&autoscroller.options.keys.back.label;" />
+          <textbox preference = "extensions.autoscroller.keys.back" />
+        </row>
+        <row>
+          <label value = "&autoscroller.options.keys.accelerate.label;" />
+          <textbox preference = "extensions.autoscroller.keys.accelerate" />
+        </row>
+        <row>
+          <label value = "&autoscroller.options.keys.brake.label;" />
+          <textbox preference = "extensions.autoscroller.keys.brake" />
+        </row>
+      </rows>
+    </grid>
+  </prefpane>
+</prefwindow>
