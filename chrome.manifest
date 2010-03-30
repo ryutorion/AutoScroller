@@ -1,0 +1,4 @@
+content autoscroller chrome/content/
+overlay chrome://browser/content/browser.xul chrome://autoscroller/content/overlay.xul
+locale autoscroller ja-JP chrome/locale/ja-JP/
+locale autoscroller en-US chrome/locale/en-US/

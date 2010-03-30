@@ -1,0 +1,19 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<!DOCTYPE overlay SYSTEM "chrome://autoscroller/locale/overlay.dtd">
+<overlay
+  xmlns = "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+>
+  <menupopup id = "menu_ToolsPopup">
+    <menuseparator />
+    <menuitem
+      id = "autoscroller.execute"
+      label = "&autoscroller.menu.start.label;"
+    />
+    <menuitem
+      label = "&autoscroller.menu.accelerate.label;"
+    />
+    <menuitem
+      label = "&autoscroller.menu.brake.label;"
+    />
+  </menupopup>
+</overlay>

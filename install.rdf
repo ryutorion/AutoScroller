@@ -1,0 +1,28 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<RDF
+  xmlns = "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:em = "http://www.mozilla.org/2004/em-rdf#"
+>
+  <Description about = "urn:mozilla:install-manifest">
+    <em:id>{6C6DF6A1-F8C9-4E60-A9C7-7EFDB26C6E4B}</em:id>
+    <em:version>2.0</em:version>
+    <em:type>2</em:type> <!-- Type of Addon : 2 Extensions -->
+    <em:name>Auto Scroller</em:name>
+    <em:description>Scroll a web page automatically for reading.</em:description>
+    <em:creator>Masahiro Kimoto</em:creator>
+    <!--<em:homepageURL></em:homepageURL>-->
+    <!--<em:updateURL></em:updateURL>-->
+    <!--<em:updateKey></em:updateKey>-->
+    <em:optionsURL>chrome://autoscroller/content/options.xul</em:optionsURL>
+    <!--<em:aboutURL></em:aboutURL>-->
+    <!--<em:iconURL></em:iconURL>-->
+    <em:targetApplication>
+      <Description>
+        <!-- Target Application is Firefox -->
+        <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+        <em:minVersion>2.0</em:minVersion>
+        <em:maxVersion>3.*</em:maxVersion>
+      </Description>
+    </em:targetApplication>
+  </Description>
+</RDF>
