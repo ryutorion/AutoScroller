@@ -133,6 +133,11 @@
         name = "extensions.autoscroller.keys.change"
         type = "string"
       />
+      <preference
+        id   = "autoscroller.options.keys.orient"
+        name = "extensions.autoscroller.keys.orient"
+        type = "string"
+      />
     </preferences>
     <grid>
       <columns>
@@ -159,6 +164,10 @@
         <row>
           <label value = "&autoscroller.options.keys.brake.label;" />
           <textbox preference = "extensions.autoscroller.keys.brake" />
+        </row>
+        <row>
+          <label value = "&autoscroller.options.keys.orient.label;" />
+          <textbox preference = "extensions.autoscroller.keys.orient" />
         </row>
       </rows>
     </grid>

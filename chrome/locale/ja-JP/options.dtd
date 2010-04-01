@@ -17,3 +17,4 @@
 <!ENTITY autoscroller.options.keys.back.label "逆スクロール開始">
 <!ENTITY autoscroller.options.keys.accelerate.label "スピードアップ">
 <!ENTITY autoscroller.options.keys.brake.label "スピードダウン">
+<!ENTITY autoscroller.options.keys.orient.label "方向切り替え">

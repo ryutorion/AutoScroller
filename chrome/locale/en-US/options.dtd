@@ -13,7 +13,8 @@
 <!ENTITY autoscroller.options.smooth.number.label "Scroll Unit (px)">
 
 <!ENTITY autoscroller.options.keys.change.label "Mode Trigger">
-<!ENTITY autoscroller.options.keys.execute.label "Scrol Trigger">
+<!ENTITY autoscroller.options.keys.execute.label "Scroll Trigger">
 <!ENTITY autoscroller.options.keys.back.label "Backward Scrolling Start">
 <!ENTITY autoscroller.options.keys.accelerate.label "Speed Up">
 <!ENTITY autoscroller.options.keys.brake.label "Speed Down">
+<!ENTITY autoscroller.options.keys.orient.label "Change Orient">

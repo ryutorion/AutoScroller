@@ -3,10 +3,53 @@
 <overlay
   xmlns = "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
 >
+  <script type = "application/x-javascript" src = "autoscroller.js"
+  <commandset id = "mainCommandSet">
+    <command
+      id = "autoscroller.command.execute"
+      oncommand = "AutoScroller.execute();"
+    />
+    <command
+      id = "autoscroller.command.reverse"
+      oncommand = "AutoScroller.reverse();"
+    />
+    <command
+      id = "autoscroller.command.accelerate"
+      oncommand = "AutoScroller.accelerate();"
+    />
+    <command
+      id = "autoscroller.command.brake"
+      oncommand = "AutoScroller.brake();"
+    />
+    <command
+      id = "autoscroller.command.change"
+      oncommand = "AutoScroller.change();"
+  </commandset>
+  <keyset id = "mainKeyset">
+    <key
+      id = "autoscroller.key.execute"
+      command = "autoscroller.command.execute"
+    />
+    <key
+      id = "autoscroller.key.reverse"
+      command = "autoscroller.command.reverse"
+    />
+    <key
+      id = "autoscroller.key.accelerate"
+      command = "autoscroller.command.accelerate"
+    />
+    <key
+      id = "autoscroller.key.brake"
+      command = "autoscroller.command.brake"
+    />
+    <key
+      id = "autoscroller.key.change"
+      command = "autoscroller.command.change"
+    />
+  </keyset>
   <menupopup id = "menu_ToolsPopup">
     <menuseparator />
     <menuitem
-      id = "autoscroller.execute"
       label = "&autoscroller.menu.start.label;"
     />
     <menuitem
@@ -14,6 +57,9 @@
     />
     <menuitem
       label = "&autoscroller.menu.brake.label;"
+    />
+    <menuitem
+      label = "&autoscroller.menu.mode.label;"
     />
   </menupopup>
 </overlay>

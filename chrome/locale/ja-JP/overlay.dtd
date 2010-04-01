@@ -3,3 +3,5 @@
 <!ENTITY autoscroller.menu.reverse.label "逆スクロール開始">
 <!ENTITY autoscroller.menu.accelerate.label "スクロールスピードアップ">
 <!ENTITY autoscroller.menu.brake.label "スクロールスピードダウン">
+<!ENTITY autoscroller.menu.mode.label "モード変更">
+<!ENTITY autoscroller.menu.orient.label "方向変更">
