@@ -1,2 +1,2 @@
-content autoscroller chrome/content/
+content autoscroller jar:chrome/autoscroller.jar!/content/
 overlay chrome://browser/content/browser.xul chrome://autoscroller/content/overlay.xul
