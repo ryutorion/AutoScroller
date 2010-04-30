@@ -1,65 +1,82 @@
 <?xml version = "1.0" encoding = "UTF-8" ?>
-<!DOCTYPE overlay SYSTEM "chrome://autoscroller/locale/overlay.dtd">
 <overlay
   xmlns = "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
 >
-  <script type = "application/x-javascript" src = "autoscroller.js"
+  <script type = "application/x-javascript" src = "autoscroller.js" />
   <commandset id = "mainCommandSet">
     <command
-      id = "autoscroller.command.execute"
-      oncommand = "AutoScroller.execute();"
+      id = "autoscroller.command.trigger"
+      oncommand = "AutoScroller.trigger();"
     />
     <command
-      id = "autoscroller.command.reverse"
-      oncommand = "AutoScroller.reverse();"
+      id = "autoscroller.command.back"
+      oncommand = "AutoScroller.back();"
     />
     <command
-      id = "autoscroller.command.accelerate"
-      oncommand = "AutoScroller.accelerate();"
+      id = "autoscroller.command.accel"
+      oncommand = "AutoScroller.accel();"
     />
     <command
       id = "autoscroller.command.brake"
       oncommand = "AutoScroller.brake();"
     />
     <command
-      id = "autoscroller.command.change"
-      oncommand = "AutoScroller.change();"
+      id = "autoscroller.command.orient"
+      oncommand = "AutoScroller.orient();"
+    />
   </commandset>
   <keyset id = "mainKeyset">
     <key
-      id = "autoscroller.key.execute"
-      command = "autoscroller.command.execute"
+      id = "autoscroller.keys.trigger"
+      command = "autoscroller.command.trigger"
     />
     <key
-      id = "autoscroller.key.reverse"
-      command = "autoscroller.command.reverse"
+      id = "autoscroller.keys.back"
+      command = "autoscroller.command.back"
     />
     <key
-      id = "autoscroller.key.accelerate"
-      command = "autoscroller.command.accelerate"
+      id = "autoscroller.keys.accel"
+      command = "autoscroller.command.accel"
     />
     <key
-      id = "autoscroller.key.brake"
+      id = "autoscroller.keys.brake"
       command = "autoscroller.command.brake"
     />
     <key
-      id = "autoscroller.key.change"
-      command = "autoscroller.command.change"
+      id = "autoscroller.keys.orient"
+      command = "autoscroller.command.orient"
     />
   </keyset>
   <menupopup id = "menu_ToolsPopup">
     <menuseparator />
     <menuitem
-      label = "&autoscroller.menu.start.label;"
+      id = "autoscroller.menu.trigger"
+      type = "checkbox"
+      label = "スクロール開始/停止"
+      key = "autoscroller.keys.trigger"
+      command = "autoscroller.command.trigger"
     />
     <menuitem
-      label = "&autoscroller.menu.accelerate.label;"
+      label = "逆スクロール開始"
+      key = "autoscroller.keys.back"
+      command = "autoscroller.command.back"
     />
     <menuitem
-      label = "&autoscroller.menu.brake.label;"
+      label = "スピードアップ"
+      key = "autoscroller.keys.accel"
+      command = "autoscroller.command.accel"
     />
     <menuitem
-      label = "&autoscroller.menu.mode.label;"
+      label = "スピードダウン"
+      key = "autoscroller.keys.brake"
+      command = "autoscroller.command.brake"
+    />
+    <menuitem
+      label = "方向切り替え"
+      type = "checkbox"
+      checked = "true"
+      key = "autoscroller.keys.orient"
+      command = "autoscroller.command.orient"
     />
   </menupopup>
 </overlay>

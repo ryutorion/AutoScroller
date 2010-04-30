@@ -1,175 +1,234 @@
 <?xml version = "1.0" encoding = "UTF-8" ?>
 <?xml-stylesheet href = "chrome://global/skin/" type = "text/css" ?>
-<!DOCTYPE prefwindow SYSTEM "chrome://autoscroller/locale/options.dtd">
 <prefwindow
   xmlns = "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
 >
-  <prefpane
-    id = "autoscroller.options.main"
-    label = "&autoscroller.options.main.label;"
-  >
+  <prefpane>
     <preferences>
       <preference
-        id   = "autoscroller.options.mode"
-        name = "extensions.autoscroller.mode"
+        id   = "extensions.autoscroller.interval"
+        name = "extensions.autoscroller.interval"
         type = "int"
       />
       <preference
-        id   = "autoscroller.options.line.interval"
-        name = "extensions.autoscroller.line.interval"
+        id   = "extensions.autoscroller.delta"
+        name = "extensions.autoscroller.delta"
         type = "int"
       />
       <preference
-        id   = "autoscroller.options.line.delta"
-        name = "extensions.autoscroller.line.delta"
+        id   = "extensions.autoscroller.move"
+        name = "extensions.autoscroller.move"
         type = "int"
       />
       <preference
-        id   = "autoscroller.options.line.number"
-        name = "extensions.autoscroller.line.number"
-        type = "int"
+        id   = "extensions.autoscroller.keys.trigger.key"
+        name = "extensions.autoscroller.keys.trigger.key"
+        type = "string"
       />
       <preference
-        id   = "autoscroller.options.smooth.interval"
-        name = "extensions.autoscroller.smooth.interval"
-        type = "int"
+        id   = "extensions.autoscroller.keys.trigger.accel"
+        name = "extensions.autoscroller.keys.trigger.accel"
+        type = "bool"
       />
       <preference
-        id   = "autoscroller.options.smooth.delta"
-        name = "extensions.autoscroller.smooth.delta"
-        type = "int"
+        id   = "extensions.autoscroller.keys.trigger.alt"
+        name = "extensions.autoscroller.keys.trigger.alt"
+        type = "bool"
       />
       <preference
-        id   = "autoscroller.options.smooth.number"
-        name = "extensions.autoscroller.smooth.number"
-        type = "int"
+        id   = "extensions.autoscroller.keys.back.key"
+        name = "extensions.autoscroller.keys.back.key"
+        type = "string"
+      />
+      <preference
+        id   = "extensions.autoscroller.keys.back.accel"
+        name = "extensions.autoscroller.keys.back.accel"
+        type = "bool"
+      />
+      <preference
+        id   = "extensions.autoscroller.keys.back.alt"
+        name = "extensions.autoscroller.keys.back.alt"
+        type = "bool"
+      />
+      <preference
+        id   = "extensions.autoscroller.keys.accel.key"
+        name = "extensions.autoscroller.keys.accel.key"
+        type = "string"
+      />
+      <preference
+        id   = "extensions.autoscroller.keys.accel.accel"
+        name = "extensions.autoscroller.keys.accel.accel"
+        type = "bool"
+      />
+      <preference
+        id   = "extensions.autoscroller.keys.accel.alt"
+        name = "extensions.autoscroller.keys.accel.alt"
+        type = "bool"
+      />
+      <preference
+        id   = "extensions.autoscroller.keys.brake.key"
+        name = "extensions.autoscroller.keys.brake.key"
+        type = "string"
+      />
+      <preference
+        id   = "extensions.autoscroller.keys.brake.accel"
+        name = "extensions.autoscroller.keys.brake.accel"
+        type = "bool"
+      />
+      <preference
+        id   = "extensions.autoscroller.keys.brake.alt"
+        name = "extensions.autoscroller.keys.brake.alt"
+        type = "bool"
+      />
+      <preference
+        id   = "extensions.autoscroller.keys.orient.key"
+        name = "extensions.autoscroller.keys.orient.key"
+        type = "string"
+      />
+      <preference
+        id   = "extensions.autoscroller.keys.orient.accel"
+        name = "extensions.autoscroller.keys.orient.accel"
+        type = "bool"
+      />
+      <preference
+        id   = "extensions.autoscroller.keys.orient.alt"
+        name = "extensions.autoscroller.keys.orient.alt"
+        type = "bool"
       />
     </preferences>
-    <hbox>
-      <spacer flex = "1" />
-      <label value = "&autoscroller.options.mode.label;" />
-      <radiogroup preference = "extensions.autoscroller.mode" orient = "horizontal">
-        <radio label = "&autoscroller.options.mode.line.label;" />
-        <radio label = "&autoscroller.options.mode.smooth.label;" />
-      </radiogroup>
-      <spacer flex = "1" />
-    </hbox>
-    <hbox>
-      <groupbox>
-        <caption label = "&autoscroller.options.line.label;" />
-        <grid>
-          <columns>
-            <column flex = "1" />
-            <column flex = "2" />
-          </columns>
-          <rows>
-            <row>
-              <label value = "&autoscroller.options.line.interval.label;" />
-              <textbox preference = "extensions.autoscroller.line.interval" />
-            </row>
-            <row>
-              <label value = "&autoscroller.options.line.delta.label;" />
-              <textbox preference = "extensions.autoscroller.line.delta" />
-            </row>
-            <row>
-              <label value = "&autoscroller.options.line.number.label;" />
-              <textbox preference = "extensions.autoscroller.line.number" />
-            </row>
-          </rows>
-        </grid>
-      </groupbox>
-      <groupbox>
-        <caption label = "&autoscroller.options.smooth.label;" />
-        <grid>
-          <columns>
-            <column flex = "1" />
-            <column flex = "2" />
-          </columns>
-          <rows>
-            <row>
-              <label value = "&autoscroller.options.smooth.interval.label;" />
-              <textbox preference = "extensions.autoscroller.smooth.interval" />
-            </row>
-            <row>
-              <label value = "&autoscroller.options.smooth.delta.label;" />
-              <textbox preference = "extensions.autoscroller.smooth.delta" />
-            </row>
-            <row>
-              <label value = "&autoscroller.options.smooth.number.label;" />
-              <textbox preference = "extensions.autoscroller.smooth.number" />
-            </row>
-          </rows>
-        </grid>
-      </groupbox>
-    </hbox>
-  </prefpane>
-  <prefpane
-    id = "autoscroller.options.keys"
-    label = "&autoscroller.options.keys.label;"
-  >
-    <preferences>
-      <preference
-        id   = "autoscroller.options.keys.execute"
-        name = "extensions.autoscroller.keys.execute"
-        type = "string"
-      />
-      <preference
-        id   = "autoscroller.options.keys.back"
-        name = "extensions.autoscroller.keys.back"
-        type = "string"
-      />
-      <preference
-        id   = "autoscroller.options.keys.accelerate"
-        name = "extensions.autoscroller.keys.accelerate"
-        type = "string"
-      />
-      <preference
-        id   = "autoscroller.options.keys.brake"
-        name = "extensions.autoscroller.keys.brake"
-        type = "string"
-      />
-      <preference
-        id   = "autoscroller.options.keys.change"
-        name = "extensions.autoscroller.keys.change"
-        type = "string"
-      />
-      <preference
-        id   = "autoscroller.options.keys.orient"
-        name = "extensions.autoscroller.keys.orient"
-        type = "string"
-      />
-    </preferences>
-    <grid>
-      <columns>
-        <column flex = "1" />
-        <column flex = "2" />
-      </columns>
-      <rows>
-        <row>
-          <label value = "&autoscroller.options.keys.change.label;" />
-          <textbox preference = "extensions.autoscroller.keys.change" />
-        </row>
-        <row>
-          <label value = "&autoscroller.options.keys.execute.label;" />
-          <textbox preference = "extensions.autoscroller.keys.execute" />
-        </row>
-        <row>
-          <label value = "&autoscroller.options.keys.back.label;" />
-          <textbox preference = "extensions.autoscroller.keys.back" />
-        </row>
-        <row>
-          <label value = "&autoscroller.options.keys.accelerate.label;" />
-          <textbox preference = "extensions.autoscroller.keys.accelerate" />
-        </row>
-        <row>
-          <label value = "&autoscroller.options.keys.brake.label;" />
-          <textbox preference = "extensions.autoscroller.keys.brake" />
-        </row>
-        <row>
-          <label value = "&autoscroller.options.keys.orient.label;" />
-          <textbox preference = "extensions.autoscroller.keys.orient" />
-        </row>
-      </rows>
-    </grid>
+    <groupbox>
+      <caption label = "スクロール設定" />
+      <hbox>
+        <vbox>
+          <label
+            value = "1秒当たりの更新回数" 
+            control = "autoscroller.interval.text"
+            flex = "1"
+          />
+          <label
+            value = "移動量(ピクセル)" 
+            control = "autoscroller.move.text"
+            flex = "1"
+          />
+          <label
+            value = "スピードアップ/ダウンでの移動量の変化量" 
+            control = "autoscroller.delta.text"
+            flex = "1"
+          />
+        </vbox>
+        <vbox>
+          <textbox
+            id = "autoscroller.interval.text"
+            preference = "extensions.autoscroller.interval" 
+          />
+          <textbox
+            id = "autoscroller.move.text"
+            preference = "extensions.autoscroller.move" 
+          />
+          <textbox
+            id = "autoscroller.delta.text"
+            preference = "extensions.autoscroller.delta" 
+          />
+        </vbox>
+      </hbox>
+    </groupbox>
+    <groupbox>
+      <caption label = "ショートカットキー" />
+      <hbox>
+        <vbox>
+          <label
+            value = "スクロール開始/停止"
+            flex = "1"
+          />
+          <label
+            value = "逆スクロール開始"
+            flex = "1"
+          />
+          <label
+            value = "スピードアップ"
+            flex = "1"
+          />
+          <label
+            value = "スピードダウン"
+            flex = "1"
+          />
+          <label
+            value = "方向切り替え"
+            flex = "1"
+          />
+        </vbox>
+        <vbox>
+          <checkbox
+            label = "control/command"
+            preference = "extensions.autoscroller.keys.trigger.accel"
+            flex = "1"
+          />
+          <checkbox
+            label = "control/command"
+            preference = "extensions.autoscroller.keys.back.accel"
+            flex = "1"
+          />
+          <checkbox
+            label = "control/command"
+            preference = "extensions.autoscroller.keys.accel.accel"
+            flex = "1"
+          />
+          <checkbox
+            label = "control/command"
+            preference = "extensions.autoscroller.keys.brake.accel"
+            flex = "1"
+          />
+          <checkbox
+            label = "control/command"
+            preference = "extensions.autoscroller.keys.orient.accel"
+            flex = "1"
+          />
+        </vbox>
+        <vbox>
+          <checkbox
+            label = "alt"
+            preference = "extensions.autoscroller.keys.trigger.alt"
+            flex = "1"
+          />
+          <checkbox
+            label = "alt"
+            preference = "extensions.autoscroller.keys.back.alt"
+            flex = "1"
+          />
+          <checkbox
+            label = "alt"
+            preference = "extensions.autoscroller.keys.accel.alt"
+            flex = "1"
+          />
+          <checkbox
+            label = "alt"
+            preference = "extensions.autoscroller.keys.brake.alt"
+            flex = "1"
+          />
+          <checkbox
+            label = "alt"
+            preference = "extensions.autoscroller.keys.orient.alt"
+            flex = "1"
+          />
+        </vbox>
+        <vbox>
+          <textbox
+            preference = "extensions.autoscroller.keys.trigger.key"
+          />
+          <textbox
+            preference = "extensions.autoscroller.keys.back.key"
+          />
+          <textbox
+            preference = "extensions.autoscroller.keys.accel.key"
+          />
+          <textbox
+            preference = "extensions.autoscroller.keys.brake.key"
+          />
+          <textbox
+            preference = "extensions.autoscroller.keys.orient.key"
+          />
+        </vbox>
+      </hbox>
+    </groupbox>
   </prefpane>
 </prefwindow>
